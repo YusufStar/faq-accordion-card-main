@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.illustration {
+    background: url('./bg-pattern-desktop.svg');
+    background-position:bottom -80px right 80px;
+    background-size:750px;
+    background-repeat: no-repeat;
+    width: 57%;
+    position: relative;
+}
+
+.illustration__box {
+    position: absolute;
+    z-index: 999;
+    top: 200px;
+    left: -95px;
+}
+
+.illustration__woman-desktop {
+    position: absolute;
+    top: 60px;
+    left: -77px;
+    clip-path: inset(0px 0px 0px 77px);
+}
+
+.illustration__woman-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .illustration__woman-desktop {
+      max-width: 120%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .illustration {
+        background: transparent;
+    }
+    
+    .illustration__box {
+        display: none;
+      }
+  
+      .illustration__woman-desktop {
+        display: none;
+      }
+  
+      .illustration__woman-mobile {
+        display: block;
+        width: 200px;
+        position: absolute;
+        left: 75px;
+      }
+}
