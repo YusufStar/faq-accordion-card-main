@@ -29,13 +29,13 @@
     display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .illustration__woman-desktop {
       max-width: 120%;
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
     .illustration {
         background: transparent;
     }
